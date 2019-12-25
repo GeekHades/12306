@@ -4,3 +4,6 @@
 *.log
 .idea/
 tkcode.png
+
+# 12306 account
+TickerConfig.py

@@ -44,6 +44,7 @@ class select:
         self.login = GoLogin(self, TickerConfig.IS_AUTO_CODE, self.auto_code_type)
         self.cookies = ""
         self.queryUrl = "leftTicket/queryO"
+        #self.queryUrl = "leftTicket/queryO"
         self.passengerTicketStrList = ""
         self.passengerTicketStrByAfterLate = ""
         self.oldPassengerStr = ""

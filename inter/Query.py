@@ -71,6 +71,7 @@ class query:
                                                                  self.session.queryUrl)
             station_ticket = self.httpClint.send(select_url)
             value = station_ticket.get("data", "")
+            print(value);
             if not value:
                 print(u'{0}-{1} 车次坐席查询为空，查询url: https://kyfw.12306.cn{2}, 可以手动查询是否有票'.format(
                     self.from_station_h,

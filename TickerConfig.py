@@ -9,7 +9,7 @@ TICKET_TYPE = 1
 
 # 出发日期(list) "2018-01-06", "2018-01-07"
 STATION_DATES = [
-    "2020-01-22"
+    "2020-01-15"
 ]
 
 # 填入需要购买的车次(list)，"G1353"
@@ -42,10 +42,10 @@ IS_MORE_TICKET = True
 # 乘车人(list) 多个乘车人ex:
 # "张三",
 # "李四"
-TICKET_PEOPLES = []
+TICKET_PEOPLES = ["李珠"]
 
 # 12306登录账号
-USER = ""
+USER = "li18253577193"
 PWD = ""
 
 # 加入小黑屋时间默认为5分钟，此功能为了防止僵尸票导致一直下单不成功错过正常的票
@@ -81,10 +81,10 @@ HTTP_TYPE = "http"
 #  host: "smtp.qq.com"
 EMAIL_CONF = {
     "IS_MAIL": True,
-    "email": "",
-    "notice_email_list": "",
-    "username": "",
-    "password": "",
+    "email": "2473471311@qq.com",
+    "notice_email_list": "workhades@163.com",
+    "username": "2473471311",
+    "password": "uyhbvdsvpupedhjb",
     "host": "smtp.qq.com",
 }
 
@@ -102,7 +102,7 @@ ORDER_TYPE = 2
 
 # 下单模式 1 为预售，整点刷新，刷新间隔0.1-0.5S, 然后会校验时间，比如12点的预售，那脚本就会在12.00整检票，刷新订单
 #         2 是捡漏，捡漏的刷新间隔时间为0.5-3秒，时间间隔长，不容易封ip
-ORDER_MODEL = 1
+ORDER_MODEL = 2
 
 # 是否开启代理, 0代表关闭， 1表示开始
 # 开启此功能的时候请确保代理ip是否可用，在测试放里面经过充分的测试，再开启此功能，不然可能会耽误你购票的宝贵时间
@@ -126,8 +126,8 @@ CHROME_PATH = "/usr/src/app/chromedriver"
 CHROME_CHROME_PATH = "/opt/google/chrome/google-chrome"
 
 # 如果COOKIE_TYPE=3, 则需配置RAIL_EXPIRATION、RAIL_DEVICEID的值
-RAIL_EXPIRATION = ""
-RAIL_DEVICEID = ""
+RAIL_EXPIRATION = "1577573639606"
+RAIL_DEVICEID = "WP1M2qVBkB2udH9Mk8hRLI4BgVnrcCe4kzS-EiQ6gO54jMEM_zSe7eMiKc3uH4PoOwrcfOgaQDMGHH5SyYnxttcZY-uBbKuSZ3mlG5Yf-8XsmxotcvzMjGZguYtuLOuZ5WSapNKUUVqqEIDEL61B1R0NS1EUz6pq"
 # RAIL_EXPIRATION = "1577034103293"
 # RAIL_DEVICEID = "CDno29Erc_Pf3FSXb4dzq-Op64EhWrsi5yUZKVIKR1MAfYo2qFlCeXD8VkexY7_1qg-ClV-fE8j9jgVlPZxRh3wVc2iqLe_5A8sdr62qZx4B22JPF8lFCjpgTKZ5ODW90HJd5tiQsJ1KR9nOqHRxHj1FT5LEIwfw"
 

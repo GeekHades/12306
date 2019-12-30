@@ -48,7 +48,7 @@ TICKET_PEOPLES = ["李珠"]
 
 # 12306登录账号
 USER = "li18253577193"
-PWD = "Hades_12306"
+PWD = ""
 
 # 加入小黑屋时间默认为5分钟，此功能为了防止僵尸票导致一直下单不成功错过正常的票
 TICKET_BLACK_LIST_TIME = 5

@@ -9,19 +9,19 @@ TICKET_TYPE = 1
 
 # 出发日期(list) "2018-01-06", "2018-01-07"
 STATION_DATES = [
-    "2020-01-15"
+    "2020-01-29"
 ]
 
 # 填入需要购买的车次(list)，"G1353"
 # 修改车次填入规则，注：(以前设置的车次逻辑不变)，如果车次填入为空，那么就是当日乘车所有车次都纳入筛选返回
 # 不填车次是整个list为空才算，如果不是为空，依然会判断车次的，这种是错误的写法 [""], 正确的写法 []
-STATION_TRAINS = ["G197"]
+STATION_TRAINS = ["G1587"]
 
 # 出发城市，比如深圳北，就填深圳就搜得到
-FROM_STATION = "北京南"
+FROM_STATION = "临沂北"
 
 # 到达城市 比如深圳北，就填深圳就搜得到
-TO_STATION = "济南"
+TO_STATION = "北京南"
 
 # 座位(list) 多个座位ex:
 # "商务座",
@@ -102,7 +102,7 @@ ORDER_TYPE = 2
 
 # 下单模式 1 为预售，整点刷新，刷新间隔0.1-0.5S, 然后会校验时间，比如12点的预售，那脚本就会在12.00整检票，刷新订单
 #         2 是捡漏，捡漏的刷新间隔时间为0.5-3秒，时间间隔长，不容易封ip
-ORDER_MODEL = 2
+ORDER_MODEL = 1
 
 # 是否开启代理, 0代表关闭， 1表示开始
 # 开启此功能的时候请确保代理ip是否可用，在测试放里面经过充分的测试，再开启此功能，不然可能会耽误你购票的宝贵时间
@@ -113,7 +113,7 @@ ORDER_MODEL = 2
 IS_PROXY = 0
 
 # 预售放票时间, 如果是捡漏模式，可以忽略此操作
-OPEN_TIME = "12:59:57"
+OPEN_TIME = "15:59:50"
 # 1=使用selenium获取devicesID
 # 2=使用网页端/otn/HttpZF/logdevice获取devicesId，这个接口的算法目前可能有点问题，如果登录一直302的请改为配置1
 # 3=自己打开浏览器在headers-Cookies中抓取RAIL_DEVICEID和RAIL_EXPIRATION，这个就不用配置selenium
@@ -126,8 +126,8 @@ CHROME_PATH = "/usr/src/app/chromedriver"
 CHROME_CHROME_PATH = "/opt/google/chrome/google-chrome"
 
 # 如果COOKIE_TYPE=3, 则需配置RAIL_EXPIRATION、RAIL_DEVICEID的值
-RAIL_EXPIRATION = "1577573639606"
-RAIL_DEVICEID = "WP1M2qVBkB2udH9Mk8hRLI4BgVnrcCe4kzS-EiQ6gO54jMEM_zSe7eMiKc3uH4PoOwrcfOgaQDMGHH5SyYnxttcZY-uBbKuSZ3mlG5Yf-8XsmxotcvzMjGZguYtuLOuZ5WSapNKUUVqqEIDEL61B1R0NS1EUz6pq"
+RAIL_EXPIRATION = "1578109681045"
+RAIL_DEVICEID = "s_R9KzjdZzcerb4RDCyregxLQq5-qyhWvh3xFWutM612FrB6cx0rt4oeKklD8SqUxX38mDVTEaqBAQesEo95F5N2C0pP20BIe66kEdu4Cx-qIC9xWDBHx6-9jaA1T1uKawa7tKipjAH1Qa5y9pH3jLDrmn_KzuEk"
 # RAIL_EXPIRATION = "1577034103293"
 # RAIL_DEVICEID = "CDno29Erc_Pf3FSXb4dzq-Op64EhWrsi5yUZKVIKR1MAfYo2qFlCeXD8VkexY7_1qg-ClV-fE8j9jgVlPZxRh3wVc2iqLe_5A8sdr62qZx4B22JPF8lFCjpgTKZ5ODW90HJd5tiQsJ1KR9nOqHRxHj1FT5LEIwfw"
 
